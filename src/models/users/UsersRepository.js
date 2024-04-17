@@ -12,7 +12,7 @@ export default class UsersRepository {
 
     return allUsers;
     } catch (error) {
-      console.error("failed to get users: ", error)
+      //console.error("failed to get users: ", error)
       throw error;
     }
   }
@@ -50,7 +50,7 @@ export default class UsersRepository {
       );
       return user;
     } catch (error) {
-      console.error(`failed to create user  ${user}: `, error)
+      console.error("failed to create user : ", error)
       throw error;
     }
   }
